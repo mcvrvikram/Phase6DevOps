@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>WebProject</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link th:href="@{/css/main.css}" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section id="nav-bars">
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#"><img th:src="@{/image/user.webp}"></a>
+    
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+ 
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto"> 
+            <li class="nav-item ">
+              <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#footer">Contact</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+</section>
+<!--banner setion-->
+
+<section id="banner">
+    <div class="container"> 
+    <div class="row">
+    <div class="col-md-6">
+        <h5 class="promo-title">Hello!</h5>
+        <P> I'm Manoj Kumar </P>
+        <p>Web Developer &  Full Stack Developer</p>
+       <a href="#"></a>
+    </div>
+    <div class="col-md-6 text-center">
+        <img th:src="@{/image/hello3.svg}" class="img-fluid">
+    </div>
+    </div>
+    </div>
+
+    <img th:src="@{/image/wave1.png}" class="bottom-img">
+</section>
+<!-- Services-->
+
+<section id="Services">
+    <div class="container text-center">
+        <h1 class="title">My Services</h1>
+        <p class="mx-auto mb-3" style="max-width:600px"> I offer services fit for any website or app. I can quickly maximize timely deliverables for real-time schemas.</p>
+
+    <div class="row text-center">
+    <div class="row">
+    <div class="col-md-3 Services">
+        <img th:src="@{/image/web-design.svg}" class="service-img">
+        <h4 >Web Design</h4>
+        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative.</p>
+    </div>
+
+    <div class="col-md-3 Services">
+        <img th:src="@{/image/graphic-design.svg}" class="service-img">
+        <h4 >Graphic Design</h4>
+        <p>Graphic designers/artists design graphics for use in media products such as magazines, labels, advertising and signage. ... developing concepts</p>
+    </div>
+    <div class="col-md-3 Services">
+        <img th:src="@{/image/ui-ux.svg}" class="service-img">
+        <h4 >UI/UX</h4>
+        <p>UX-UI Designers are generally responsible for collecting, researching, investigating and evaluating user requirements.</p>
+    </div>
+    
+    <div class="col-md-3 Services">
+        <img th:src="@{/image/app-development.svg}" class="service-img">
+        <h4>Mobile Development</h4>
+        <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).</p>
+    </div>
+   </div>
+    </div>  <button type="button" class="btn btn-primary">All Services</button>
+    </div>    
+</section>
+
+<!--About Us-->
+
+<section id="about-us">
+<div class="container">
+<h1 class="title text-center"> What About Me</h1>
+<div class="row">
+<div class="col-md-6 about-us">
+    <p class="about-title"> Full Stack Web Developer</p>
+    <ul>
+        <li>Program a browser (like using JavaScript, jQuery, Angular, or Vue)</li>
+        <li>Program a server (like using PHP, ASP, Python, or Node)</li>
+        <li>Program a database (like using SQL, SQLite, or MongoDB)</li>
+
+    </ul>
+</div>
+<div class="col-md-6">
+    <img th:src="@{/image/network.png}" class="img-fluid">
+</div>
+</div>
+</div>
+</section>
+<!--Skills-->
+<section id="skills">
+<div class="container">
+    <h1 class="title text-center"> MY Skills</h1>
+<div class="row offset-1" >
+<div class="col-md-4 skills">
+    <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+    <img th:src="@{/image/java.png}">
+    <p class="skill-details"><b> Java </b><br>High-level programming language</p>
+</div>
+<div class="col-md-4 skills">
+    <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+    <img th:src="@{/image/hcj.jpg}">
+    <p class="skill-details"><b> Html,CSS & JavaScript </b><br>Best for develop front-end</p>
+</div>
+<div class="col-md-4 skills">
+    <p>Spring Boot provides a good platform for Java developers to develop a stand-alone and production-grade spring application that you can just run. </p>
+    <img th:src="@{/image/spring.png}">
+    <p class="skill-details"><b> Spring Boot </b><br>Well-supported backend</p>
+</div>
+</div>
+</div>
+
+</section>
+
+<!--Social Media-->
+<section id="social-media">
+<div class="container text-center">
+<p>FIND ME ON SOCIAL MEDIA</p>
+    <div class="social-icons">
+        <a href="#"><img th:src="@{/image/facebook-icon.png}"></a>
+        <a href="#"><img th:src="@{/image/twitter-icon.png}"></a>
+        <a href="#"><img th:src="@{/image/whatsapp-icon.png}"></a>
+        <a href="#"><img th:src="@{/image/instagram-icon.png}"></a>
+        <a href="#"><img th:src="@{/image/linkedin-icon.png}"></a>
+    </div>
+</div>
+</section>
+
+<!--Footer-->
+<section  id="footer">
+    <img th:src="@{/image/wave2.png}" class="footer-img">
+<div class="container">
+<div class="row">
+<div class="col-md-4 footer-box">
+    <img th:src="@{/image/demo-logo.png}">
+    <p>A Full Stack Developer is someone who works with the Back End  or server side  of the application as well as the Front End, or client side. Full Stack Developers have to have some skills in a wide variety of coding niches, from databases to graphic design and UI/UX management in order to do their job well.</p>
+</div>
+<div class="col-md-4 footer-box">
+    <p><b> CONTACT US</b></p>
+    <p><i class="fa fa-map-marker"></i>Bagalur,Hosur, TN</p>
+    <p><i class="fa fa-mobile"></i>9524297945</p>
+    <p><i class="fa fa-envelope-o"></i>manoj@gmail.com</p>
+
+</div>
+<div class="col-md-4 footer-box">
+    <p><b>IT'S SHOW TIME </b></p>
+    <input type="email" class="form-control" placeholder="Your Email">
+    <button type="button" class="btn btn-primary">Send</button>
+</div>
+</div>
+    <hr>
+    <p class="copy-right">Copyright 2014 | All Rights Reserved --Design - Manoj Kumar</p>
+</div>
+</section>
+
+<!--Soomth scroll-->
+
+    <script th:src="@{/javascript/smooth-scroll.js}"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+</html>
